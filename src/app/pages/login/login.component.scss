@@ -1,0 +1,25 @@
+:host{
+    background-color: #222;
+    position: absolute;
+    flex-direction: column-reverse;
+    width: 100vw;
+    height:100vh;
+}
+.base{
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    img{
+        width: 40%;
+    }
+    button{
+        min-width: 350px;
+        padding: 20px;
+        border-radius: 500px;
+        background-color: red;
+        color: white;
+        border: 0;
+        font-size: 2rem;
+        cursor: pointer;
+    }
+}
