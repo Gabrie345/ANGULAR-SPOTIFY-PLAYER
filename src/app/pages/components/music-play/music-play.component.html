@@ -1,0 +1,7 @@
+<button class="button mouserHover selecionado" type="button"
+    [class.selecionado]="selecionado== true"
+    (click)="onClick()">
+    <ng-content></ng-content>
+    <img class="icone" src="https://img.icons8.com/windows/32/000000/playlist.png"/>
+    <span>{{ descricao }}</span>
+</button>

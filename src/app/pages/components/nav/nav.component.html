@@ -1,0 +1,41 @@
+<div class="menu flex">
+    <div class="image-container flex flex-center">
+        <img src="assets/imagens/logo_player.png" alt="" srcset="">
+    </div>  
+    <div class="botoes opcoes">
+        <app-botao [descricao]="'Home'"
+            [selecionado]="opcaoSelecionado==='Home'"
+            (click)="onClick('Home')">        
+                <img class="icone" src="https://img.icons8.com/ios-filled/50/000000/home.png"/>
+        </app-botao>
+        <app-botao [descricao]="'Artista'"
+            [selecionado]="opcaoSelecionado==='Artista'"
+            (click)="onClick('Artista')">
+            <img class="icone" src="https://img.icons8.com/glyph-neue/64/000000/dj.png"/>
+        </app-botao>
+        <app-botao [descricao]="'Pesquisar'"
+            [selecionado]="opcaoSelecionado==='Pesquisar'"
+            (click)="onClick('Pesquisar')">
+                <img class="icone" src="https://img.icons8.com/ios-glyphs/30/000000/search--v1.pnggi"/>
+        </app-botao>
+    </div>
+    <div class="playlist">
+        <span class="titulo">
+            Minhas Playlist
+        </span>
+        <div class="scroll">     
+            <app-music-play 
+                *ngFor= "let playlist of playlist"
+                [descricao]="playlist.nome"
+                [selecionado]="opcaoSelecionado===playlist.id"
+                (click)="onClick(playlist.id)">
+            </app-music-play>
+
+        </div>
+    
+    </div>
+</div>
+
+<div class="usuario">
+
+</div>

@@ -1,8 +1,17 @@
+import { IPlaylist } from '../interface/IPlaylist';
 import { IUsuario } from './../interface/IUsuario';
 export function SpotifyUser(user: SpotifyApi.CurrentUsersProfileResponse): IUsuario{
-    return {
+    return{
         id: user.id,
         nome: user.display_name,
-        iamgemUrl: user.images.pop().url
+        iamgemUrl: ''
+    }
+    
+}
+export function SpotifyPlaylist(playlisty: SpotifyApi.PlaylistObjectSimplified): IPlaylist{
+    return {
+        id: playlisty.id,
+        nome: playlisty.name,
+        imagemUrl: ''
     }
 }
