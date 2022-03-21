@@ -1,5 +1,6 @@
 $h-logo:120px;
 $h-opcoes:120px;
+$h-user:70px;
 $m-opcoes:10px;
 :host{
     max-width: 300px;
@@ -46,7 +47,15 @@ $m-opcoes:10px;
             margin-bottom: 10px;
         }
     }
-
+}
+.usuario{
+    flex-grow: 0;
+    display: block; 
+    bottom: 0;
+    align-self: flex-end;
+    height: $h-user;   
+    width: 100%;
+    background-color: rgb(71, 70, 70);
 }
 
 .icone{

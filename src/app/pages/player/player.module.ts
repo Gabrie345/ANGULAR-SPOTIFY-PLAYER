@@ -7,6 +7,8 @@ import { NavComponent } from '../components/nav/nav.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { BotaoComponent } from '../components/botao/botao.component';
 import { MusicPlayComponent } from '../components/music-play/music-play.component';
+import { AreaDoClienteLogadoComponent } from '../components/area-do-cliente-logado/area-do-cliente-logado.component';
+import { HomeComponent } from '../components/home/home.component';
 
 
 
@@ -15,8 +17,9 @@ import { MusicPlayComponent } from '../components/music-play/music-play.componen
     PlayerComponent,
     NavComponent,
     BotaoComponent,
-    //BotaoComponent,
-    MusicPlayComponent
+    HomeComponent,
+    MusicPlayComponent,
+    AreaDoClienteLogadoComponent
   ],
   imports: [
     CommonModule,

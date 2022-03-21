@@ -11,6 +11,7 @@ import { SpotifyPlaylist, SpotifyUser } from '../Common/spotifyHelper';
 export class SpotifyServiceService {
   spotifyAPI: Spotify.SpotifyWebApiJs;
   usuario: IUsuario;
+  usuarioSecao: IUsuario;
 
   constructor () {
     this.spotifyAPI = new Spotify();
@@ -33,7 +34,8 @@ export class SpotifyServiceService {
   async obterUsuarioSpotify(){
     const userInfo = await this.spotifyAPI.getMe(); 
     this.usuario = SpotifyUser(userInfo);
-
+    localStorage.setItem('nomeClienteLogado', this.usuario.nome);
+    console.log(userInfo)
   }
 
   UrlLogin(){

@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { PlayerComponent } from './pages/player/player.component';
 import { NavComponent } from './pages/components/nav/nav.component';
 import { BotaoComponent } from './pages/components/botao/botao.component';
+import { HomeComponent } from './pages/components/home/home.component';
 
 @NgModule({
   declarations: [
